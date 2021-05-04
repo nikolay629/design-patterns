@@ -1,6 +1,5 @@
 package HomeworkMediatorAndSignleton;
 
-import java.util.List;
 
 public class ChatUser extends User{
 
@@ -11,7 +10,6 @@ public class ChatUser extends User{
 
     @Override
     public void send(String message) {
-        //TODO: here i should go to check for ban words
         System.out.println(this.name + " send: " + message);
         if(message.equals("addBot")){
             Singleton.getBot();
